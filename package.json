@@ -1,0 +1,91 @@
+{
+  "name": "noirdoor",
+  "version": "0.0.0",
+  "description": "Music streaming that is fair and fun.",
+  "homepage": "https://github.com/noirdoor/noirdoor",
+  "main": "index.js",
+  "author": {
+    "name": "Seth Holladay",
+    "url": "http://seth-holladay.com",
+    "email": "me@seth-holladay.com"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:noirdoor/noirdoor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noirdoor/noirdoor/issues",
+    "email": "me@seth-holladay.com"
+  },
+  "engines": {
+    "node": ">=7.6"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bin": "cli.js",
+  "files": [
+    "lib",
+    "index.js",
+    "cli.js"
+  ],
+  "dependencies": {
+    "bell": "^8.5.0",
+    "chalk": "^1.1.3",
+    "dotenv-safe": "^4.0.3",
+    "handle-quit": "^0.1.1",
+    "handlebars": "^4.0.6",
+    "hapi": "^16.1.0",
+    "hapi-auth-cookie": "^6.1.1",
+    "hapi-doorkeeper": "^0.1.0",
+    "hapi-error-page": "^0.1.1",
+    "hapi-hi": "^0.1.0",
+    "hapi-perm": "^0.1.0",
+    "inert": "^4.1.0",
+    "meow": "^3.7.0",
+    "opn": "^4.0.2",
+    "port-type": "^0.2.1",
+    "root-check": "^1.0.0",
+    "throw-rejects": "^0.1.3",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "eslint-config-tidy": "^0.4.0",
+    "xo": "^0.17.0"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "server",
+    "listen",
+    "play",
+    "playlist",
+    "music",
+    "stream",
+    "streaming",
+    "service",
+    "fair",
+    "fun",
+    "musician",
+    "artist",
+    "fan"
+  ],
+  "xo": {
+    "extend": "tidy",
+    "overrides": [
+      {
+        "files": "lib/route/*.js",
+        "rules": {
+          "id-length": ["error", {
+            "exceptions": [
+              "r"
+            ]
+          }]
+        }
+      }
+    ]
+  }
+}

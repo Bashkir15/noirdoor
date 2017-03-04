@@ -1,0 +1,86 @@
+* {
+    margin  : 0;
+    padding : 0;
+}
+:root {
+    --nd-yellow       : hsl(50, 100%, 71%);
+    --nd-yellow-light : hsl(55, 100%, 74%);
+    --nd-dark-bg      : black;
+    --content-width   : 30em;
+    background  : var(--nd-dark-bg);
+    color       : white;
+    font-family : Calibri, sans-serif;
+    font-size   : 18px;
+}
+a {
+    color           : var(--nd-yellow);
+    text-decoration : none;
+    font-weight     : bold;
+    transition      : 0.2s color linear;
+}
+a:hover {
+    color : var(--nd-yellow-light);
+}
+#navigation {
+    display    : inline;
+    list-style : none;
+}
+#navigation li {
+    display : inline;
+}
+#navigation a {
+    display : inline-block;
+    padding : 1em 1.2em;
+}
+#home {
+    width          : 3.416em;
+    height         : 3.416em;
+    vertical-align : middle;
+}
+
+h1, h2 {
+    margin: 0.9em 0.2em;
+}
+h1 {
+    font-size: 180%;
+}
+h2 {
+    font-size: 120%;
+}
+p {
+    margin : 0.6em 0;
+}
+
+main {
+    background  : hsl(222, 10%, 94%);
+    color       : var(--nd-dark-bg);
+    display     : block;
+    line-height : 1.6;
+    padding     : 1.2em 0;
+}
+main a {
+    color : black;
+}
+main a:hover {
+    color : blue;
+}
+main p {
+    text-align : left;
+}
+img {
+    border : none;
+}
+footer {
+    padding : 1em 0;
+}
+#fortune {
+    padding : 0.2em 0 0.5em;
+}
+#avatar {
+    width : 40px;
+    vertical-align: middle;
+}
+.content {
+    margin    : 0 auto;
+    max-width : var(--content-width);
+}

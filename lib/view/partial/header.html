@@ -1,0 +1,14 @@
+<nav>
+    <ul id="navigation">
+        <li><a href="/"><img id="home" src="/static/img/logo.png" alt="Home"></a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    {{#if isAuthenticated }}
+        Not you? <a href="/logout">Log out</a> -- <a href="/{{ username }}"><img id="avatar" src="{{ avatarUrl }}"></a>
+    {{else }}
+        <a href="/login">Log in</a>
+    {{/if }}
+</nav>
