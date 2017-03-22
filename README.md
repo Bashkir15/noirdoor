@@ -4,7 +4,7 @@
 
 ## Why?
 
- - Our [philosophy](http://www.noirdoor.com/noirdoor) is based upon appreciation of our community.
+ - Our [philosophy](https://noirdoor.com/noirdoor) is based upon appreciation of our community.
  - Our app allows people to lead happy, productive lives.
  - Our team is a diverse group of musicians and fans.
  - Our technology delivers a beautiful experience.
@@ -14,8 +14,11 @@
 ```sh
 git clone git@github.com:noirdoor/noirdoor.git &&
 cd noirdoor &&
+cp .env.example .env &&
 npm link
 ```
+
+You will need some credentials to put in `.env`. Ask @sholladay to provide them.
 
 ## Usage
 
