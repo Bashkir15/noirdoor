@@ -85,7 +85,7 @@ class AppServer extends Server {
                     port     : this.app.dbPort,
                     ssl      : this.app.dbHostname && this.app.dbHostname !== 'localhost' && {
                         // eslint-disable-next-line no-sync
-                        ca : fs.readFileSync(path.join(__dirname, 'lib', 'database.cert'))
+                        ca : fs.readFileSync(path.join(__dirname, 'lib', 'cert', 'database.cert'))
                     }
                 }
             },
