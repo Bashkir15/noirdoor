@@ -2,4 +2,19 @@
     <h1>Noirdoor</h1>
     <h2>Devoted to artists. Respecting the fans.</h2>
     <p>Please <a href="/login">log in</a>.</p>
+    <form method="POST" action="/user/charge">
+        <article>
+            <label>Amount: $9.99</label>
+        </article>
+        <script class="stripe-button" src="//checkout.stripe.com/v2/checkout.js"
+            data-name="Noirdoor"
+            data-description="Monthly fan subscription"
+            data-amount="999"
+            data-locale="auto"
+            data-label="Pay Monthly"
+            data-panel-label="Become a Fan"
+            data-image="https://static.wixstatic.com/media/9233a8_9e9f422cde764928b3a87c2f43eb298a~mv2.png"
+            data-key="{{ stripePublicKey }}">
+        </script>
+    </form>
 </div>

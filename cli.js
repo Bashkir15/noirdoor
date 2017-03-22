@@ -8,6 +8,7 @@
 // Fail fast if a rejected promise is not caught.
 require('throw-rejects')();
 
+const path = require('path');
 const { bold } = require('chalk');
 const open = require('opn');
 const rootCheck = require('root-check');
@@ -32,11 +33,32 @@ const cli = require('meow')(`
 const { SecurityError } = require('./lib/error');
 const AppServer = require('.');
 
-const serverOptions = Object.assign({}, cli.flags);
-delete serverOptions.target;
-delete serverOptions.open;
+require('dotenv-safe').load({
+    sample : path.join(__dirname, '.env.example'),
+    path   : path.join(__dirname, '.env')
+});
 
-const server = new AppServer(serverOptions);
+const { env } = process;
+const serverOption = Object.assign(
+    {
+        sessionSecretKey : env.SESSION_SECRET_KEY,
+        auth0Domain      : env.AUTH0_DOMAIN,
+        auth0PublicKey   : env.AUTH0_PUBLIC_KEY,
+        auth0SecretKey   : env.AUTH0_SECRET_KEY,
+        stripePublicKey  : env.STRIPE_PUBLIC_KEY,
+        stripeSecretKey  : env.STRIPE_SECRET_KEY,
+        dbName           : env.RETHINK_DB_NAME,
+        dbUser           : env.RETHINK_DB_USER,
+        dbPassword       : env.RETHINK_DB_PASSWORD,
+        dbHostname       : env.RETHINK_DB_HOSTNAME,
+        dbPort           : env.RETHINK_DB_PORT
+    },
+    cli.flags
+);
+delete serverOption.target;
+delete serverOption.open;
+
+const server = new AppServer(serverOption);
 
 handleQuit(() => {
     server.stop();

@@ -5,7 +5,8 @@ const path = require('path');
 const portType = require('port-type');
 const { Server } = require('hapi');
 const hi = require('hapi-hi');
-// const perm = require('hapi-perm');
+const perm = require('hapi-perm');
+const zebra = require('hapi-zebra');
 const errorPage = require('hapi-error-page');
 const doorkeeper = require('hapi-doorkeeper');
 const cookie = require('hapi-auth-cookie');
@@ -13,15 +14,12 @@ const bell = require('bell');
 const inert = require('inert');
 const vision = require('vision');
 const handlebars = require('handlebars');
-require('dotenv-safe').load({
-    sample : path.join(__dirname, '.env.example'),
-    path   : path.join(__dirname, '.env')
-});
 
 /* eslint-disable global-require */
 const routes = [
     require('./lib/route/static'),
     require('./lib/route/home'),
+    require('./lib/route/charge'),
     require('./lib/route/profile')
 ];
 /* eslint-enable global-require */
@@ -53,6 +51,8 @@ class AppServer extends Server {
             }
         });
 
+        Object.assign(this.app, config);
+
         super.connection({
             labels : ['web', 'tls'],
             host   : 'localhost',
@@ -69,19 +69,37 @@ class AppServer extends Server {
                     cwd : __dirname
                 }
             },
-            // {
-            //     register : perm,
-            //     options  : {
-            //         db       : 'noirdoor',
-            //         user     : process.env.NOIRDOOR_DB_USER,
-            //         password : process.env.NOIRDOOR_DB_PASSWORD,
-            //         host     : process.env.NOIRDOOR_DB_HOSTNAME,
-            //         port     : process.env.NOIRDOOR_DB_PORT
-            //     }
-            // },
+            {
+                register : zebra,
+                options  : {
+                    secretKey : this.app.stripeSecretKey
+                }
+            },
+            {
+                register : perm,
+                options  : {
+                    db       : this.app.dbName,
+                    user     : this.app.dbUser,
+                    password : this.app.dbPassword,
+                    host     : this.app.dbHostname,
+                    port     : this.app.dbPort,
+                    ssl      : this.app.dbHostname && this.app.dbHostname !== 'localhost' && {
+                        // eslint-disable-next-line no-sync
+                        ca : fs.readFileSync(path.join(__dirname, 'lib', 'database.cert'))
+                    }
+                }
+            },
             cookie,
             bell,
-            doorkeeper,
+            {
+                register : doorkeeper,
+                options  : {
+                    sessionSecretKey : this.app.sessionSecretKey,
+                    auth0Domain      : this.app.auth0Domain,
+                    auth0PublicKey   : this.app.auth0PublicKey,
+                    auth0SecretKey   : this.app.auth0SecretKey
+                }
+            },
             inert,
             vision,
             errorPage
