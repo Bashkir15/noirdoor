@@ -239,12 +239,12 @@ template {
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("/static/fonts/josefinsans-light.woff");
-  src: url("/static/fonts/josefinsans-light.woff2"); }
+  src: url("/static/font/josefinsans-light.woff");
+  src: url("/static/font/josefinsans-light.woff2"); }
 @font-face {
   font-family: 'Josefin Sans bold';
-  src: url("/static/fonts/josefinsans-bold.woff");
-  src: url("/static/fonts/josefinsans-bold.woff2"); }
+  src: url("/static/font/josefinsans-bold.woff");
+  src: url("/static/font/josefinsans-bold.woff2"); }
 body .inform .start h2, body .inform .main h3, body .inform .main h6, body .inform .main p {
   font-family: 'Josefin Sans', sans-serif;
   color: #2F2F2E; }
