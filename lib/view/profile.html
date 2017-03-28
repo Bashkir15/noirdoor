@@ -1,8 +1,83 @@
-<div class="content">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artist Profile</title>
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="/static/css/profile.css">
+  </head>
+  <body>
+    <nav>
+      <img src="/static/img/logo.png" alt="logo" class="logo">
+      <input type="text" placeholder="Search Noirdoor" class="searchbar">
+      <div class="profile-summary">
+        <h2>artist name</h2>
+        <span class="artist-photo-sm"></span>
+      </div>
+    </nav>
+    <div class="artist-wrapper">
+      <div class="header-image">
+        <img src="../static/img/upload.svg" alt="upload">
+      </div>
+      <div class="artist-info">
+        <span>
+          <img src="../static/img/upload.svg" alt="upload">
+        </span>
+        <div>
+          <p class="artist">Artist</p>
+          <p class="artist-name">Artist Name</p>
+          <p class="genre"> Genre - Location</p>
+        </div>
+      </div>
+      <div class="artist-links">
+        <div class="social-media">
+          <ul>
+            <a href="#">
+              <li><img src="/static/img/fb.svg" alt="facebook"></li>
+            </a>
+            <a href="#">
+              <li><img src="/static/img/ig.svg"></li>
+            </a>
+            <a href="#">
+              <li><img src="/static/img/twitter.svg"></li>
+            </a>
+          </ul>
+        </div>
+        <a href="#"><button type="button" class="artist-buttons">Upload</button></a>
+        <a href="#"><button type="button" class="artist-buttons">Analytics</button></a>
+      </div>
+    </div>
+    <div class="upload-wrapper">
+      <div class="upload-perimeter">
+        <p>Upload a Track to Noirdoor</p>
+        <img src="/static/img/listener.svg" alt="listen-icon" class="listener">
+        <br>
+        <button type="button" class="upload-button">Choose a File to Upload</button>
+        <div class="warning">
+          <p>
+            Important:
+            <br>
+            <br>
+            By sharing, you confirm that your sounds comply with our Terms of service and you don’t infringe anyone else’s rights.
+            If in doubt, check our FAQs before uploading.
+            <br>
+            <br>
+            What types of files can I upload? You can upload MP3 files. The maximum file size is 5GB.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+<!--<div class="content">
     <h1>Noirdoor</h1>
     <h2>Hi, {{ shortName }}! Welcome to Noirdoor.</h2>
     <p>Thanks for logging in. Here is your profile.</p>
     <pre><code>
         {{ user }}
     </code></pre>
-<div>
+<div>-->

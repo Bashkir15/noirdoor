@@ -6,6 +6,9 @@
     --nd-yellow       : hsl(50, 100%, 71%);
     --nd-yellow-light : hsl(55, 100%, 74%);
     --nd-dark-bg      : black;
+    --nd-gray         : hsl(0,0%,73%);
+    --nd-filler-gray  : hsl(0, 0%, 28%);
+    --nd-nav-gray     : hsl(0, 1%, 14%);
     --content-width   : 30em;
     background  : var(--nd-dark-bg);
     color       : white;

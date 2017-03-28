@@ -1,0 +1,188 @@
+nav {
+    background-color: var(--nd-nav-gray);
+    height: 75px;
+    overflow: hidden;
+}
+
+.logo {
+    height: 75px;
+}
+
+
+.searchbar {
+    height: 33px;
+    background-image: url(../images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    background-position: 99%;
+    margin: -52px 86px;
+    display: block;
+    width: 40%;
+    border: .5px solid var(--nd-yellow);
+    border-radius: 7px;
+
+}
+
+.profile-summary{
+    float: right;
+    overflow: auto;
+}
+
+.profile-summary h2 {
+    color: var(--nd-yellow);
+    font-family : Calibri, sans-serif;
+    float: right;
+    margin: 15px 5px
+}
+
+.profile-summary span {
+    height: 60px;
+    width: 60px;
+    background-color: var(--nd-gray);
+    float: right;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.artist-wrapper {
+    overflow: hidden;
+}
+
+.header-image {
+    background-color: var(--nd-filler-gray);
+    height: 500px;
+}
+
+.header-image img {
+    display: block;
+    margin: auto;
+    height: 90px;
+}
+
+.artist-info {
+    display: inline-block;
+}
+.artist-info span {
+    height: 250px;
+    width: 250px;
+    background-color: var(--nd-gray);
+    border-radius: 50%;
+    display: block;
+    margin: -225px 80px;
+}
+
+.artist-info span img {
+    display: block;
+    margin: 0 auto;
+    height: 90px;
+}
+
+.artist-info div {
+    color: var(--nd-yellow);
+    float: right;
+    margin-right: -80px;
+    margin-top: -144px;
+    font-family : Calibri, sans-serif;
+}
+
+.artist {
+    margin-bottom: -18px;
+}
+
+.artist-name {
+    font-size: 25px;
+    margin-bottom: -18px;
+}
+
+.genre {
+    font-size: 20px;
+}
+
+.artist-links {
+    background-color: var(--nd-nav-gray);
+    margin-top: -27px;
+    overflow: hidden;
+    height: 75px;
+}
+
+.social-media {
+    height: 40px;
+    width: 119px;
+    clear: right;
+    float: left;
+    margin-top: 13px;
+    margin-left: 22%;
+}
+
+.social-media ul{
+    margin-top: 15px;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.social-media ul li img {
+    height: 20px;
+
+}
+.artist-buttons {
+    border: 1px solid var(--nd-yellow);
+    background-color: transparent;
+    color: var(--nd-yellow);
+    float: right;
+    font-size: 20px;
+    width: 150px;
+    margin: 12px 20px;
+    height: 49px;
+    transition: .5s;
+}
+
+.artist-buttons:hover {
+    color: black;
+    background-color: var(--nd-yellow)
+}
+
+.upload-wrapper {
+    height: 700px;
+    background-color: var(--nd-yellow-lighter);
+    overflow: hidden;
+}
+
+.upload-perimeter {
+    border: 1px solid var(--nd-yellow);
+    color: black;
+    height: 500px;
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.upload-perimeter > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.listener {
+    height: 80px;
+    margin-top: 30px;
+}
+
+.upload-button {
+    border: none;
+    background-color: var(--nd-yellow);
+    margin-top: 15px;
+}
+
+    .warning {
+    height: 160px;
+    background-color: black;
+    margin: 110px auto;
+    width: 75%;
+}
+
+.warning p {
+    font-family : Calibri, sans-serif;
+    color: white;
+}
