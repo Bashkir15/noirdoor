@@ -1,1 +1,80 @@
-TESTING LOL HI
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artist Profile</title>
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="/static/css/user-profile.css">
+  </head>
+  <body>
+    <nav>
+      <img src="/static/img/logo.png" alt="logo" class="logo">
+      <div class="searchbar-div">
+          <input type="text" placeholder="Search Noirdoor" class="searchbar">
+      </div>
+      <div class="profile-summary">
+        <h2>Fan Name</h2>
+        <span class="fan-photo-sm"></span>
+      </div>
+    </nav>
+    <div class="fan-wrapper">
+      <div class="header-image">
+        <div class="cover-upload">
+            <form method="POST" action="/user/photo" enctype="multipart/form-data" class="header-upload">
+                <input type="file" accept=".png">
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </div>
+      </div>
+      <div class="user-info">
+        <div class="profile-upload">
+        <form method="POST" action="/user/photo" enctype="multipart/form-data" class="header-upload">
+                <input type="file" accept=".png">
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </div>
+        <div class="fan-details">
+          <p class="fan">Fan</p>
+          <p class="fan-name">Fan Name</p>
+          <p class="genre"> Genre - Location</p>
+        </div>
+      </div>
+      <div class="fan-links">
+        <div class="social-media">
+          <ul>
+            <a href="#">
+              <li><img src="/static/img/fb.svg" alt="facebook"></li>
+            </a>
+            <a href="#">
+              <li><img src="/static/img/ig.svg"></li>
+            </a>
+            <a href="#">
+              <li><img src="/static/img/twitter.svg"></li>
+            </a>
+          </ul>
+        </div>
+        <a href="#"><button type="button" class="fan-buttons">Profile</button></a>
+        <a href="#"><button type="button" class="fan-buttons">Discover</button></a>
+      </div>
+    </div>
+    <div class="music-wrapper">
+      <div class="music-perimeter">
+        <p>Artist of the Month</p>
+        <div class="album-art">
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+<!--<div class="content">
+    <h1>Noirdoor</h1>
+    <h2>Hi, {{ shortName }}! Welcome to Noirdoor.</h2>
+    <p>Thanks for logging in. Here is your profile.</p>
+    <pre><code>
+        {{ user }}
+    </code></pre>
+<div>-->

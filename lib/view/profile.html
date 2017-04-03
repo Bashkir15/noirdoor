@@ -20,7 +20,7 @@
     <div class="artist-wrapper">
       <div class="header-image">
         <div class="cover-upload">
-            <form method="POST" action="/user/photo" enctype="multipart/form-data" class="header-upload">
+            <form method="POST" action="/artist/photo" enctype="multipart/form-data" class="header-upload">
                 <input type="file" accept=".png">
                 <!-- <button type="submit">Submit</button> -->
             </form>
@@ -28,7 +28,7 @@
       </div>
       <div class="artist-info">
         <div class="profile-upload">
-        <form method="POST" action="/user/photo" enctype="multipart/form-data" class="header-upload">
+        <form method="POST" action="/artist/photo" enctype="multipart/form-data" class="header-upload">
                 <input type="file" accept=".png">
                 <!-- <button type="submit">Submit</button> -->
             </form>
@@ -62,7 +62,7 @@
         <p>Upload a Track to Noirdoor</p>
         <img src="/static/img/listener.svg" alt="listen-icon" class="listener">
         <br>
-        <form method="POST" action="/user/audio" enctype="multipart/form-data" class="header-upload">
+        <form method="POST" action="/artist/audio" enctype="multipart/form-data" class="header-upload">
             <label for="audio-upload" class="upload-button">Choose a File to Upload</label>
             <input type="file" id="audio-upload" accept=".mp3">
         </form>
