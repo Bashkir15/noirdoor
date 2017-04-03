@@ -20,7 +20,8 @@ const routes = [
     require('./lib/route/static'),
     require('./lib/route/home'),
     require('./lib/route/charge'),
-    require('./lib/route/profile')
+    require('./lib/route/profile'),
+    require('./lib/route/user-profile')
 ];
 /* eslint-enable global-require */
 

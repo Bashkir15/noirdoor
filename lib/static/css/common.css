@@ -1,10 +1,21 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url("../fonts/josefinsans-light.woff");
+    src: url("../fonts/josefinsans-light.woff2");
+}
+@font-face {
+    font-family: 'Josefin Sans bold';
+    src:url("../fonts/josefinsans-bold.woff");
+    src: url("../fonts/josefinsans-bold.woff2");
+}
+
 * {
     margin  : 0;
     padding : 0;
 }
 :root {
     --nd-yellow       : hsl(50, 100%, 71%);
-    --nd-yellow-light : hsl(55, 100%, 74%);
+    --nd-yellow-light : hsl(54, 100%, 96%);
     --nd-dark-bg      : black;
     --nd-gray         : hsl(0,0%,73%);
     --nd-filler-gray  : hsl(0, 0%, 28%);

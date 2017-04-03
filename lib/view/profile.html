@@ -9,21 +9,31 @@
   <body>
     <nav>
       <img src="/static/img/logo.png" alt="logo" class="logo">
-      <input type="text" placeholder="Search Noirdoor" class="searchbar">
+      <div class="searchbar-div">
+          <input type="text" placeholder="Search Noirdoor" class="searchbar">
+      </div>
       <div class="profile-summary">
-        <h2>artist name</h2>
+        <h2>Artist Name</h2>
         <span class="artist-photo-sm"></span>
       </div>
     </nav>
     <div class="artist-wrapper">
       <div class="header-image">
-        <a href="#"><img src="../static/img/upload.svg" alt="upload"></a>
+        <div class="cover-upload">
+            <form method="POST" action="/user/photo" enctype="multipart/form-data" class="header-upload">
+                <input type="file" accept=".png">
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </div>
       </div>
       <div class="artist-info">
-        <span>
-          <a href="#"><img src="../static/img/upload.svg" alt="upload"></a>
-      </span>
-        <div>
+        <div class="profile-upload">
+        <form method="POST" action="/user/photo" enctype="multipart/form-data" class="header-upload">
+                <input type="file" accept=".png">
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </div>
+        <div class="artist-details">
           <p class="artist">Artist</p>
           <p class="artist-name">Artist Name</p>
           <p class="genre"> Genre - Location</p>
@@ -43,8 +53,8 @@
             </a>
           </ul>
         </div>
-        <a href="#"><button type="button" class="artist-buttons">Upload</button></a>
         <a href="#"><button type="button" class="artist-buttons">Analytics</button></a>
+        <a href="#"><button type="button" class="artist-buttons">Upload</button></a>
       </div>
     </div>
     <div class="upload-wrapper">
@@ -52,15 +62,16 @@
         <p>Upload a Track to Noirdoor</p>
         <img src="/static/img/listener.svg" alt="listen-icon" class="listener">
         <br>
-        <button type="button" class="upload-button">Choose a File to Upload</button>
+        <form method="POST" action="/user/audio" enctype="multipart/form-data" class="header-upload">
+            <label for="audio-upload" class="upload-button">Choose a File to Upload</label>
+            <input type="file" id="audio-upload" accept=".mp3">
+        </form>
         <div class="warning">
           <p>
             Important:
             <br>
-            <br>
-            By sharing, you confirm that your sounds comply with our Terms of service and you don’t infringe anyone else’s rights.
-            If in doubt, check our FAQs before uploading.
-            <br>
+            By sharing, you confirm that your sounds comply with our <a href="#">Terms of Service</a> and you don’t infringe anyone else’s rights.
+            If in doubt, check our <a href="#">FAQs</a> before uploading.
             <br>
             What types of files can I upload? You can upload MP3 files. The maximum file size is 5GB.
           </p>
