@@ -93,9 +93,9 @@ button { background: none; border: none; }
 
 .nav-item:not(.nav-logo) { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.nav-logo img { height: 50px; width: 50px; margin-right: 10px; }
+.nav-logo img { height: 50px; width: 50px; margin-right: 5px; }
 
-.nav-logo h3 { color: #FFE66B; }
+.nav-logo h3 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; font-style: italic; letter-spacing: 0px; color: #FFE66B; }
 
 .nav-mobile-trigger { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; height: 50px; width: 50px; padding-top: 4px; }
 
@@ -107,10 +107,12 @@ button { background: none; border: none; }
 
 .nav-mobile-trigger span:nth-child(3) { width: 30px; top: 22px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; background: #FFE66B; }
 
-.fan-home-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 550px; background: url(../../img/concert-2.jpg); background-size: 130% 100%; }
+.fan-home-header { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 550px; background: url(../../img/concert-2.jpg); background-size: 130% 100%; }
 
-.fan-home-header > div { width: 90%; padding: 150px 0; text-align: center; }
+.fan-home-header > div:not(.fan-home-header-overlay) { position: relative; width: 90%; padding: 150px 0; text-align: center; z-index: 10; }
 
-.fan-home-header > div h1 { letter-spacing: 2px; line-height: 50px; color: #FFE66B; margin-bottom: 30px; }
+.fan-home-header > div:not(.fan-home-header-overlay) h1 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; font-style: italic; letter-spacing: 0px; line-height: 50px; color: #FFE66B; margin-bottom: 75px; }
 
-.fan-home-header > div button { height: 40px; width: 140px; border: 2px solid #FFE66B; color: #FFE66B; }
+.fan-home-header > div:not(.fan-home-header-overlay) button { height: 40px; width: 140px; border: 2px solid #FFE66B; color: #FFE66B; font-family: 'Open Sans', Raleway, helvetica, sans-serif; font-weight: normal; text-transform: uppercase; font-size: 16px; }
+
+.fan-home-header-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
