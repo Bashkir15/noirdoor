@@ -166,6 +166,8 @@ button { background: none; border: none; }
 @media screen and (min-width: 1300px) { .fan-home-welcome > p { width: 50%; }
   .fan-home-welcome > p:nth-of-type(3) { margin-bottom: 5px; } }
 
+@media screen and (min-width: 1600px) { .fan-home-welcome > p { width: 40%; } }
+
 .fan-home-works { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 60px 0; background: #f7f2eb; }
 
 .fan-home-works h2 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 22px; text-transform: uppercase; margin-bottom: 5px; }
@@ -235,8 +237,8 @@ button { background: none; border: none; }
 
 @media screen and (min-width: 1350px) { .fan-home-support p { width: 50%; } }
 
-@media screen and (min-width: 1500px) { .fan-home-support-entries { width: 85%; margin: 0 auto; }
-  .fan-home-support-single { width: 33%; }
+@media screen and (min-width: 1500px) { .fan-home-support-entries { width: 85%; margin: 0 auto; padding-bottom: 0; }
+  .fan-home-support-single { width: 33%; margin-bottom: 40px; }
   .fan-home-support-single img { width: 100px; height: 100px; } }
 
 .fan-home-funds { padding: 50px 0; background: #FFE66B; text-align: center; }
