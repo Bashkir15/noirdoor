@@ -41,7 +41,7 @@ gulp.task('devStyles', () => {
 			browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
 			cascade: true
 		}))
-		.pipe(pure(['./lib/views/**/*.html', './lib/static/scripts/**/*.js']))
+		//gul.pipe(pure(['./lib/views/**/*.html', './lib/static/scripts/**/*.js']))
 		.pipe(gulp.dest(paths.dev.styles))
 		.pipe(notify('Styles Task Complete'))
 })
