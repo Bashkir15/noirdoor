@@ -81,6 +81,38 @@
 			transform-origin: left center
 			background: $yellow
 
+@media screen and (min-width: 1200px)
+	.nav
+		padding: 10px 15px
+		
+	.nav-mobile-item
+		display: none
+
+	.nav-right
+		.nav-item
+			border-right: 1px solid $yellow
+			@include rale()
+			font-weight: 500
+			font-size: 16px
+			letter-spacing: 0px
+
+			&:not(.nav-mobile-item)
+				display: flex
+
+			a
+				text-decoration: none
+				color: $yellow
+
+			button
+				color: $yellow
+				@include rale()
+				font-weight: 500
+				letter-spacing: 0px
+				font-size: 16px
+
+			&:nth-of-type(3)
+				border-right: none
+
 
 
 
