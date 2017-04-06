@@ -146,3 +146,21 @@ button { background: none; border: none; }
 .fan-home-pricing { padding: 55px 0; background: #FFE66B; text-align: center; }
 
 .fan-home-pricing h3 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; font-style: bold; letter-spacing: 1px; font-size: 22px; }
+
+.fan-home-support { padding: 60px 0; background: #f7f2eb; text-align: center; }
+
+.fan-home-support p { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; letter-spacing: 1px; font-size: 16px; line-height: 25px; width: 85%; margin: 0 auto; }
+
+.fan-home-support button { height: 40px; width: 160px; margin-top: 20px; background: #FFE66B; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; letter-spacing: 0px; font-size: 14px; text-transform: uppercase; }
+
+.fan-home-support-entries { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 50px 0; }
+
+.fan-home-support-single { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin-bottom: 60px; }
+
+.fan-home-support-single img { height: 155px; width: 155px; margin-bottom: 23px; border-radius: 50%; }
+
+.fan-home-support-single p { font-family: 'Open Sans', Raleway, helvetica, sans-serif; font-weight: normal; font-size: 15px; letter-spacing: 1px; line-height: 25px; width: 75%; margin: 0 auto; }
+
+.fan-home-funds { padding: 50px 0; background: #FFE66B; text-align: center; }
+
+.fan-home-funds p { width: 80%; margin: 0 auto; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; font-size: 16px; line-height: 28px; margin-bottom: 30px; }
