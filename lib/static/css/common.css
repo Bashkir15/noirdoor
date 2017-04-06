@@ -2,6 +2,13 @@
     margin  : 0;
     padding : 0;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --nd-yellow       : hsl(50, 100%, 71%);
     --nd-yellow-light : hsl(55, 100%, 74%);
@@ -84,3 +91,4 @@ footer {
     margin    : 0 auto;
     max-width : var(--content-width);
 }
+
