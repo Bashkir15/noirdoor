@@ -116,3 +116,33 @@ button { background: none; border: none; }
 .fan-home-header > div:not(.fan-home-header-overlay) button { height: 40px; width: 140px; border: 2px solid #FFE66B; color: #FFE66B; font-family: 'Open Sans', Raleway, helvetica, sans-serif; font-weight: normal; text-transform: uppercase; font-size: 16px; }
 
 .fan-home-header-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+
+.fan-home-welcome { padding: 65px 0; background: #FFF378; text-align: center; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; font-size: 16px; line-height: 28px; }
+
+.fan-home-welcome > p { width: 80%; margin: 0 auto 30px auto; }
+
+.fan-home-welcome > p:nth-of-type(1) { font-size: 20px; margin-bottom: 65px; }
+
+.fan-home-welcome > p:nth-of-type(4) span { font-style: italic; }
+
+.fan-home-welcome > p span { font-size: 18px; font-weight: 600; font-style: bold; }
+
+.fan-home-works { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 60px 0; background: #f7f2eb; }
+
+.fan-home-works h2 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 22px; text-transform: uppercase; margin-bottom: 5px; }
+
+.fan-home-works .yellow-underline { height: 0; width: 120px; margin-bottom: 60px; border-bottom: 2px solid #FFE66B; }
+
+.fan-home-works button { height: 40px; width: 160px; margin-top: 20px; background: #FFE66B; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; letter-spacing: 0px; font-size: 14px; text-transform: uppercase; }
+
+.fan-home-single-work { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin-bottom: 60px; }
+
+.fan-home-single-work img { height: 155px; width: 155px; margin-bottom: 23px; border-radius: 50%; }
+
+.fan-home-single-work h4 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; letter-spacing: 1px; font-size: 17px; text-transform: uppercase; margin-bottom: 37px; }
+
+.fan-home-single-work p { font-family: 'Open Sans', Raleway, helvetica, sans-serif; font-weight: normal; font-size: 15px; letter-spacing: 1px; line-height: 25px; width: 75%; margin: 0 auto; }
+
+.fan-home-pricing { padding: 55px 0; background: #FFE66B; text-align: center; }
+
+.fan-home-pricing h3 { font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; font-style: bold; letter-spacing: 1px; font-size: 22px; }
