@@ -1,11 +1,7 @@
 const gulp = require('gulp');
-const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-const gutil = require('gulp-util');
 
 const sass = require('gulp-sass');
-const pure = require('gulp-purifycss');
-const autoprefixer = require('gulp-autoprefixer'); // incase we want to be nice
 
 const paths = {
 	dev: {
@@ -17,35 +13,19 @@ const paths = {
 	}
 };
 
-function handleErrors(...args) {
-	gutil.beep();
-	this.emit('end');
 
-	notify.onError({
-		title: 'Error',
-		message: '<%= error.message %>'
-	}).apply(this, args);
-}
 
-gulp.task('devStyles', () => {
+function processStyles(done) {
 	gulp.src(paths.dev.mainSass)
-		.pipe(plumber({
-			errorHandler: handleErrors
-		}))
 		.pipe(sass({
 			errLogToConsole: true,
 			outputStyle: 'compact',
 			precision: 10
 		}))
-		.pipe(autoprefixer({
-			browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
-			cascade: true
-		}))
-		//gul.pipe(pure(['./lib/views/**/*.html', './lib/static/scripts/**/*.js']))
 		.pipe(gulp.dest(paths.dev.styles))
-		.pipe(notify('Styles Task Complete'))
-})
+		.pipe(notify('Styles task complete'))
+		done();
+}
 
-gulp.task('default', ['devStyles'], () => {
-	gulp.watch([paths.dev.mainSass, paths.dev.otherSass], ['devStyles']);
-});
+
+gulp.task('styles', processStyles);
