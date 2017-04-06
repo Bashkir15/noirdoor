@@ -17,10 +17,12 @@
 
 .nav-right
 	display: flex
-	flex: 1
-	flex-basis: 0
 	align-items: center
 	justify-content: flex-end
+
+	.nav-item
+		&:not(.nav-mobile-item)
+			display: none
 
 .nav-item
 	display: flex
@@ -38,6 +40,42 @@
 
 	h3
 		color: #FFE66B
+
+.nav-mobile-trigger
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: relative
+	height: 50px
+	width: 50px
+	padding-top: 4px
+
+	span
+		display: block
+		position: relative
+		height: 2px
+		border-radius: 5px
+		margin-top: 1px
+		opacity: 1
+
+		&:nth-child(1)
+			width: 30px
+			top: 10px
+			transform-origin: left center
+			background: $yellow
+
+		&:nth-child(2)
+			width: 30px
+			top: 16px
+			transform-origin: left center
+			background: $yellow
+
+		&:nth-child(3)
+			width: 30px
+			top: 22px
+			transform-origin: left center
+			background: $yellow
+
 
 
 

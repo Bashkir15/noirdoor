@@ -79,11 +79,15 @@ audio, canvas, progress, video { display: inline-block; }
 
 ::-moz-focus-inner { padding: 0; border: 0; }
 
+button { background: none; border: none; }
+
 .nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; position: relative; height: 60px; padding: 10px 0; background: #000; z-index: 20; }
 
 .nav-left { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
-.nav-right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.nav-right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.nav-right .nav-item:not(.nav-mobile-item) { display: none; }
 
 .nav-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 10px; }
 
@@ -92,3 +96,21 @@ audio, canvas, progress, video { display: inline-block; }
 .nav-logo img { height: 50px; width: 50px; margin-right: 10px; }
 
 .nav-logo h3 { color: #FFE66B; }
+
+.nav-mobile-trigger { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; height: 50px; width: 50px; padding-top: 4px; }
+
+.nav-mobile-trigger span { display: block; position: relative; height: 2px; border-radius: 5px; margin-top: 1px; opacity: 1; }
+
+.nav-mobile-trigger span:nth-child(1) { width: 30px; top: 10px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; background: #FFE66B; }
+
+.nav-mobile-trigger span:nth-child(2) { width: 30px; top: 16px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; background: #FFE66B; }
+
+.nav-mobile-trigger span:nth-child(3) { width: 30px; top: 22px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; background: #FFE66B; }
+
+.fan-home-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 550px; background: url(../../img/concert-2.jpg); background-size: 130% 100%; }
+
+.fan-home-header > div { width: 90%; padding: 150px 0; text-align: center; }
+
+.fan-home-header > div h1 { letter-spacing: 2px; line-height: 50px; color: #FFE66B; margin-bottom: 30px; }
+
+.fan-home-header > div button { height: 40px; width: 140px; border: 2px solid #FFE66B; color: #FFE66B; }
