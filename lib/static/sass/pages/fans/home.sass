@@ -67,7 +67,18 @@
 				padding-top: 230px
 
 
+@media screen and (min-width: 1350px)
+	.fan-home-header
+		> div
+			&:not(.fan-home-header-overlay)
+				button
+					height: 40px
+					border-radius: 4px
 
+@media screen and (min-width: 1600px)
+	.fan-home-header
+		height: 750px
+		background-size: 100% 100%
 
 .fan-home-welcome
 	padding: 65px 0
@@ -118,6 +129,18 @@
 
 			&:nth-of-type(1)
 				font-size: 23px
+
+@media screen and (min-width: 1300px)
+	.fan-home-welcome
+		> p
+			width: 50%
+
+			&:nth-of-type(3)
+				margin-bottom: 5px
+
+
+
+
 
 
 
@@ -231,6 +254,24 @@
 		height: 360px
 		margin-bottom: 100px
 
+@media screen and (min-width: 1500px)
+	.fan-home-works-list
+		width: 75%
+
+	.fan-home-single-work
+		display: flex
+		flex: 1
+
+		img
+			height: 145px
+			width: 145px
+
+
+
+
+
+
+
 .fan-home-pricing
 	padding: 55px 0
 	background: $yellow
@@ -242,6 +283,12 @@
 		font-style: bold
 		letter-spacing: 1px
 		font-size: 22px
+
+
+
+
+
+
 
 .fan-home-support
 	padding: 60px 0
@@ -342,6 +389,31 @@
 		width: 50%
 
 
+@media screen and (min-width: 1350px)
+	.fan-home-support
+		p
+			width: 50%
+
+
+
+@media screen and (min-width: 1500px)
+	.fan-home-support-entries
+		width: 85%
+		margin: 0 auto
+
+	.fan-home-support-single
+		width: 33%
+
+		img
+			width: 100px
+			height: 100px
+
+
+
+
+
+
+
 
 .fan-home-funds
 	padding: 50px 0
@@ -372,3 +444,9 @@
 		p
 			width: 60%
 			margin-bottom: 45px
+
+@media screen and (min-width: 1500px)
+	.fan-home-funds
+		p
+			width: 48%
+			margin-bottom: 30px

@@ -107,12 +107,12 @@ button { background: none; border: none; }
 
 .nav-mobile-trigger span:nth-child(3) { width: 30px; top: 22px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; background: #FFE66B; }
 
-@media screen and (min-width: 1200px) { .nav { padding: 10px 15px; }
+@media screen and (min-width: 1200px) { .nav { height: 70px; padding: 20px; }
   .nav-mobile-item { display: none; }
-  .nav-right .nav-item { border-right: 1px solid #FFE66B; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 0px; }
+  .nav-right .nav-item { border-right: 1px solid #FFE66B; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0px; }
   .nav-right .nav-item:not(.nav-mobile-item) { display: -webkit-box; display: -ms-flexbox; display: flex; }
   .nav-right .nav-item a { text-decoration: none; color: #FFE66B; }
-  .nav-right .nav-item button { color: #FFE66B; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; letter-spacing: 0px; font-size: 16px; }
+  .nav-right .nav-item button { color: #FFE66B; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 600; letter-spacing: 0px; font-size: 16px; }
   .nav-right .nav-item:nth-of-type(3) { border-right: none; } }
 
 .fan-home-header { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 550px; background: url(../../img/concert-2.jpg); background-size: 130% 100%; }
@@ -131,6 +131,10 @@ button { background: none; border: none; }
 @media screen and (min-width: 1000px) { .fan-home-header { height: 670px; }
   .fan-home-header > div:not(.fan-home-header-overlay) { padding-top: 230px; } }
 
+@media screen and (min-width: 1350px) { .fan-home-header > div:not(.fan-home-header-overlay) button { height: 40px; border-radius: 4px; } }
+
+@media screen and (min-width: 1600px) { .fan-home-header { height: 750px; background-size: 100% 100%; } }
+
 .fan-home-welcome { padding: 65px 0; background: #FFF378; text-align: center; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; font-size: 16px; line-height: 28px; }
 
 .fan-home-welcome > p { width: 80%; margin: 0 auto 30px auto; }
@@ -148,6 +152,9 @@ button { background: none; border: none; }
 
 @media screen and (min-width: 1000px) { .fan-home-welcome > p { font-size: 17px; width: 60%; }
   .fan-home-welcome > p:nth-of-type(1) { font-size: 23px; } }
+
+@media screen and (min-width: 1300px) { .fan-home-welcome > p { width: 50%; }
+  .fan-home-welcome > p:nth-of-type(3) { margin-bottom: 5px; } }
 
 .fan-home-works { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 60px 0; background: #f7f2eb; }
 
@@ -176,6 +183,10 @@ button { background: none; border: none; }
 
 @media screen and (min-width: 1000px) { .fan-home-works-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 90%; margin: 0 auto; }
   .fan-home-single-work { width: 50%; height: 360px; margin-bottom: 100px; } }
+
+@media screen and (min-width: 1500px) { .fan-home-works-list { width: 75%; }
+  .fan-home-single-work { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+  .fan-home-single-work img { height: 145px; width: 145px; } }
 
 .fan-home-pricing { padding: 55px 0; background: #FFE66B; text-align: center; }
 
@@ -208,6 +219,12 @@ button { background: none; border: none; }
   .fan-home-support-entries { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-top: 130px; }
   .fan-home-support-single { height: 370px; width: 50%; } }
 
+@media screen and (min-width: 1350px) { .fan-home-support p { width: 50%; } }
+
+@media screen and (min-width: 1500px) { .fan-home-support-entries { width: 85%; margin: 0 auto; }
+  .fan-home-support-single { width: 33%; }
+  .fan-home-support-single img { width: 100px; height: 100px; } }
+
 .fan-home-funds { padding: 50px 0; background: #FFE66B; text-align: center; }
 
 .fan-home-funds p { width: 80%; margin: 0 auto 30px auto; font-family: 'Raleway', Open Sans, helvetica, sans-serif; font-weight: 500; font-size: 16px; line-height: 28px; }
@@ -217,3 +234,5 @@ button { background: none; border: none; }
 
 @media screen and (min-width: 1000px) { .fan-home-funds { padding: 100px 0; }
   .fan-home-funds p { width: 60%; margin-bottom: 45px; } }
+
+@media screen and (min-width: 1500px) { .fan-home-funds p { width: 48%; margin-bottom: 30px; } }
