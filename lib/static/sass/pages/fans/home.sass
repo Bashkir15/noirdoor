@@ -25,6 +25,7 @@
 				margin-bottom: 75px
 
 			button
+				position: relative
 				height: 40px
 				width: 140px
 				border: 2px solid $yellow
@@ -34,6 +35,30 @@
 				font-weight: normal
 				text-transform: uppercase
 				font-size: 16px
+				overflow: hidden
+				transition: all .4s ease-out
+
+				span
+					position: relative
+					z-index: 30
+
+				&:after
+					position: absolute
+					content: ''
+					width: 0
+					left: -10%
+					bottom: 0
+					height: 120%
+					background: $yellow
+					transition: all .4s ease-out
+					transform: skewX(15deg)
+
+				&:hover
+					color: #000
+
+					&:after
+						width: 120%
+
 
 .fan-home-header-overlay
 	position: absolute
@@ -176,6 +201,12 @@
 		letter-spacing: 0px
 		font-size: 14px
 		text-transform: uppercase
+		border: 2px solid transparent
+		transition: all .4s ease-out
+
+		&:hover
+			background: transparent
+			border-color: $yellow
 
 
 .fan-home-single-work
@@ -314,6 +345,12 @@
 		letter-spacing: 0px
 		font-size: 14px
 		text-transform: uppercase
+		border: 2px solid transparent
+		transition: all .4s ease-out
+
+		&:hover
+			background: transparent
+			border-color: $yellow
 
 .fan-home-support-entries
 	display: flex
